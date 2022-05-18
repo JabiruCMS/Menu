@@ -23,7 +23,7 @@
   },
   "require": {
     "composer/installers": "~1.0",
-    "nwidart/laravel-menus": "^7.0",
+    "jabirucms/laravel-menus": "dev-master",
     "typicms/nestablecollection": "^1.1"
   },
   "require-dev": {
@@ -32,6 +32,9 @@
     "fzaninotto/faker": "1.4.0",
     "doctrine/dbal": "^2.11",
     "idavoll/page-module": "4.0.x-dev"
+  },
+  "repositories": {
+    {"type": "vcs", "url": "git@github.com:JabiruCMS/laravel-menus.git"}
   },
   "autoload-dev": {
     "psr-4": {
