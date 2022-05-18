@@ -33,9 +33,9 @@
     "doctrine/dbal": "^2.11",
     "idavoll/page-module": "4.0.x-dev"
   },
-  "repositories": {
+  "repositories": [
     {"type": "vcs", "url": "git@github.com:JabiruCMS/laravel-menus.git"}
-  },
+  ],
   "autoload-dev": {
     "psr-4": {
       "Modules\\Menu\\": ".",
