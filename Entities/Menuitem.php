@@ -6,6 +6,23 @@ use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
 use TypiCMS\NestableTrait;
 
+/**
+ * @property int $id
+ * @property string $name
+ * @property string $title
+ * @property bool $status
+ * @property int $position
+ * @property string $url
+ * @property string $uri
+ * @property string $locale
+ * @property string $target
+ * @property string $module_name
+ * @property string $icon
+ * @property string $link_type
+ * @property string $class
+ * @property string $description
+ *
+ */
 class Menuitem extends Model
 {
     use Translatable, NestableTrait;

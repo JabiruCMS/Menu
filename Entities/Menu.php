@@ -4,7 +4,15 @@ namespace Modules\Menu\Entities;
 
 use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 
+/**
+ * @property int $id
+ * @property string $name
+ * @property string $title
+ * @property bool $status
+ * @property Collection<Menuitem> $menuitems
+ */
 class Menu extends Model
 {
     use Translatable;
@@ -20,6 +28,7 @@ class Menu extends Model
 
     public function menuitems()
     {
-        return $this->hasMany('Modules\Menu\Entities\Menuitem')->orderBy('position', 'asc');
+        return $this->hasMany(Menuitem::class)
+            ->orderBy('position', 'asc');
     }
 }
